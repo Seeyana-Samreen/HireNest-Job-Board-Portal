@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HireNest connects ambitious professionals with meaningful career opportunities.">
+  <title>HireNest | Find your next opportunity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">A better way to build your future</span>
+          <h1>Find your next <span>opportunity.</span></h1>
+          <p>Discover meaningful careers, connect with leading employers, and take the next step in your professional journey.</p>
+          <form id="hero-search" class="hero-search">
+            <label><span>What are you looking for?</span><input name="query" placeholder="Job title, skill or company"></label>
+            <label><span>Where?</span><input name="location" placeholder="City or remote"></label>
+            <button class="btn btn-primary" type="submit">Search jobs <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="hero-trust"><span>Trusted by professionals at</span><strong>Northstar</strong><strong>Vertex</strong><strong>Orbit</strong><strong>Monument</strong></div>
+        </div>
+        <div class="hero-art" aria-label="Career growth illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-card hero-card-main"><span class="avatar avatar-purple">AM</span><div><strong>Product Designer</strong><small>New opportunity</small></div><span class="status-dot"></span></div>
+          <div class="hero-card hero-card-small"><span class="metric-icon">↗</span><div><strong>+24.8%</strong><small>Career momentum</small></div></div>
+          <div class="hero-person"><div class="person-head"></div><div class="person-body"></div></div>
+          <div class="hero-sparkle sparkle-a">✦</div><div class="hero-sparkle sparkle-b">✦</div>
+        </div>
+      </div>
+    </section>
+    <section class="section stats-section"><div class="container stats-grid" id="home-stats"></div></section>
+    <section class="section"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">Curated for you</span><h2>Featured opportunities</h2></div><a class="text-link" href="jobs.html">View all jobs <span>→</span></a></div>
+      <div class="job-grid" id="featured-jobs"></div>
+    </div></section>
+    <section class="section categories-section"><div class="container"><div class="section-heading"><div><span class="eyebrow">Explore possibilities</span><h2>Find your place</h2></div></div><div class="category-grid" id="categories"></div></div></section>
+    <section class="cta-section"><div class="container cta-inner"><div><span class="eyebrow">The right role is waiting</span><h2>Your next career move<br>starts here.</h2></div><a class="btn btn-light" href="jobs.html">Browse jobs <span>→</span></a></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script><script src="js/main.js"></script>
+</body>
+</html>

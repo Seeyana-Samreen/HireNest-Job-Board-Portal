@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Search and filter open positions on HireNest."><title>Find Jobs | HireNest</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><div id="site-header"></div><main>
+  <section class="page-hero"><div class="container"><span class="eyebrow">Opportunities made visible</span><h1>Find work that <span>fits you.</span></h1><p>Search thousands of roles from companies building what’s next.</p></div></section>
+  <section class="section jobs-layout-section"><div class="container jobs-layout">
+    <aside class="filter-panel"><div class="filter-title"><h3>Filter jobs</h3><button id="clear-filters" class="button-reset">Clear all</button></div>
+      <label class="field-label">Search<input id="job-search" type="search" placeholder="Title, company or keyword"></label>
+      <label class="field-label">Category<select id="category-filter"><option value="">All categories</option></select></label>
+      <label class="field-label">Location<select id="location-filter"><option value="">All locations</option></select></label>
+      <label class="field-label">Employment type<select id="type-filter"><option value="">All types</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></label>
+      <label class="field-label">Experience level<select id="experience-filter"><option value="">All levels</option><option>Entry level</option><option>Mid level</option><option>Senior level</option><option>Lead</option></select></label>
+      <label class="field-label">Minimum salary<select id="salary-filter"><option value="">Any salary</option><option value="50000">$50k+</option><option value="80000">$80k+</option><option value="100000">$100k+</option><option value="130000">$130k+</option></select></label>
+    </aside>
+    <div class="results-area"><div class="results-toolbar"><div><strong id="results-count">0 jobs</strong><span> matching your search</span></div><select id="sort-filter" aria-label="Sort jobs"><option value="newest">Most recent</option><option value="salary">Highest salary</option><option value="title">Title A–Z</option></select></div><div class="job-list" id="job-list"></div></div>
+  </div></section>
+</main><div id="site-footer"></div><script src="js/data.js"></script><script src="js/main.js"></script><script src="js/jobs.js"></script></body></html>
